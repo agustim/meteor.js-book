@@ -1,0 +1,23 @@
+<head>
+  <title>chat</title>
+</head>
+
+<body>
+  {{> content}}
+</body>
+
+<template name="content">
+  <h1>{{title}}</h1>
+
+  <input name="name" id="name" type="text" />
+  <input name="message" id="message" type="text" />
+  <input id="button" type="button" value="Send" />
+  <hr>
+  {{#each messages}}
+  {{>message}}
+  {{/each}}
+</template>
+
+<template name="message">
+<div class="message"><label>{{name}}</label> : {{text}}</div>
+</template>
