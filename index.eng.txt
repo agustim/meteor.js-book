@@ -1,5 +1,7 @@
 
 · Simple example: 01/chat
 · Simple chat with internal user system: 02/chatlogin
-· File distribucion:
-· 
+· File distribucion: 03/chatfiledsitribution
+· Packages I (Bootstrap, d3)
+· Multipage (backbone)
+·

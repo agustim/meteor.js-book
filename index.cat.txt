@@ -1,5 +1,7 @@
 
 · Exemple simple: 01/chat
 · Modificació per crear usuaris: 02/chatlogin
-· Distribució de fitxers
-· 
+· Distribució de fitxers: 03/chatfiledsitribution
+· Packages I (Bootstrap, d3)
+· Multi pàgina (backbone)
+·
