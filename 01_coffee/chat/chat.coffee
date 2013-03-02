@@ -15,7 +15,7 @@ if Meteor.isClient
         )
         my_name.val("")
         my_mess.val("")  
-  );
+  )
 
   Template.content.messages = -> Messages.find({}, { sort: {time: -1} })
 
