@@ -9,7 +9,7 @@ if (Meteor.isClient) {
     'click input#button' : function () {
       var my_name = $('#name').val();
       var my_mess = $('#message').val();
-      if ( (my_name != "") &&  (my_mess != "") ){
+      if ( (my_name !== "") &&  (my_mess !== "") ){
         var my_date = Date.now();
         Messages.insert({name: my_name, text: my_mess, time: my_date});
         $('#name').val("");
