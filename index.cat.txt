@@ -3,5 +3,5 @@
 · Modificació per crear usuaris: 02/chatlogin
 · Distribució de fitxers: 03/chatfiledsitribution
 · Packages I (Bootstrap, d3): 04/vote
-· Multi pàgina (backbone) i Sessió
+· Multi pàgina (backbone) i Sessió: 05/vote
 ·

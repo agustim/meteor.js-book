@@ -1,0 +1,40 @@
+<head>
+  <title>Surveys</title>
+</head>
+
+<body>
+  {{> content}}
+</body>
+
+<template name="content">
+  <div style="float:right">
+    {{loginButtons align="right"}}
+  </div>
+  {{>navsurveys}}
+  <div class="row">
+    <div class="span4">
+      {{>survey}}
+    </div>
+    <div class="span4">
+      <h3>Status:</h3>
+      <div id="graph"></div>
+    </div>
+  </div>
+</template>
+
+<template name="survey">
+  <h3 class="survey">{{ask}}</h3>
+  <div class="options">
+    {{#each options}}
+    <button class="btn btn-block vote" type="button">{{option}}</button>
+    {{/each}}
+  </div>
+</template>
+
+<template name ="navsurveys">
+  <ul class="nav nav-tabs">
+    {{#each surveys}}
+    <li{{#if isActive}} class="active"{{/if}}><a href="/{{_id}}">{{shortname}}</a></li>
+    {{/each}}
+  </ul>
+</template>
